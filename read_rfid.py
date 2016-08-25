@@ -7,7 +7,6 @@ keyid = ""
 keys = "X^1234567890XXXXqwertzuiopXXXXasdfghjklXXXXXyxcvbnmXXXXXXXXXXXXXXXXXXXXXXX"
 #dev = InputDevice('/dev/input/by-id/usb-Sycreader_RFID_Technology_Co.__Ltd_SYC_ID_IC_USB_Reader_08FF20140315-event-kbd')
 dev = InputDevice('/dev/input/event0')
-print "Galamb Tracker V1.0"
 while True:
    r,w,x = select([dev], [], [])
    for event in dev.read():
